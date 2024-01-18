@@ -1,0 +1,65 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Azul claro */
+    color: #333; /* Color de texto principal */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    color: #007acc; /* Azul corporativo */
+    display: block; /* Hace que el elemento sea de bloque y ocupe toda la anchura disponible */
+}
+
+p {
+    color: #008080; /* Verde azulado corporativo */
+    display: block; /* Hace que el elemento sea de bloque y ocupe toda la anchura disponible */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333; /* Color de texto principal */
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #007acc; /* Azul corporativo */
+    color: #fff; /* Texto blanco */
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #005a9e; /* Azul más oscuro al pasar el ratón */
+}
+
+header {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto en el encabezado */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

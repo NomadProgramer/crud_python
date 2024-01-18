@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href='{% static "css/styles.css" %}'>
+    <title>Django Crud Aplication</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <!-- Agrega tu logo aquí -->
+        </div>
+        {% if user.is_authenticated %}
+        <div id="welcome">
+            <p>Bienvenido, {{ user.username }} <a href="/logout">LogOut</a></p>
+        </div>
+        {% endif %}
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/tasks">Tasks</a>
+            </li>
+            {% if user.is_authenticated %}
+            <li>
+                <a href="/logout">LogOut</a>
+            </li>
+            {% else %}
+            <li>
+                <a href="/sign_in">SignIn</a>
+            </li>            
+            {% endif %}
+            <li>
+                <a href="/signup">Signup</a>
+            </li>            
+        </ul>
+    </nav>
+
+    <div id="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
