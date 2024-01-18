@@ -4,6 +4,8 @@ __pycache__/
 *.pyo
 *.pyd
 
+contraseña.md
+
 # Entornos virtuales
 venv/
 env/
