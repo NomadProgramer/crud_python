@@ -1,2 +1,44 @@
-# Entornos
-/env
+# Archivos generados por Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+ENV/
+
+# Archivos de caché
+.cache/
+
+# Archivos de registro
+*.log
+
+# Entorno de desarrollo específico (por ejemplo, PyCharm)
+.idea/
+
+# Carpeta de archivos temporales
+.temp/
+
+# Archivos de configuración local
+*.local/
+
+# Archivos de compilación
+*.pyc
+*.pyo
+*.pyd
+*.class
+
+# Carpeta de construcción
+/build/
+
+# Archivos de configuración específicos de usuarios
+*.iml
+*.suo
+*.user
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
